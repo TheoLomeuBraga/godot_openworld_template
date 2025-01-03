@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="openworld_template"
+run/main_scene="res://main_map/main_map.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/OpenWorldChunkManager/plugin.cfg")
 
 [rendering]
 

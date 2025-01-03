@@ -4,6 +4,12 @@ extends Node3D
 
 class_name ChunkLoader
 
+@export var lod_mesh : Mesh:
+	get():
+		return $MeshInstance3D.mesh
+	set(value):
+		$MeshInstance3D.mesh = value
+
 @export var area_scale : Vector3:
 	get():
 		if $Node/area_display != null:
@@ -63,4 +69,5 @@ func _process(delta: float) -> void:
 			chunk_instance_node.queue_free()
 			chunk_instance_node = null
 			chunk_requested = false
-		
+	
+	$MeshInstance3D.visible = chunk_instance_node == null

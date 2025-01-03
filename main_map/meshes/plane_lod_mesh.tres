@@ -1,0 +1,9 @@
+[gd_resource type="PlaneMesh" load_steps=2 format=3 uid="uid://dw8yc4qkpiwev"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bimwe"]
+shading_mode = 0
+albedo_color = Color(0.201527, 0.201527, 0.201527, 1)
+
+[resource]
+material = SubResource("StandardMaterial3D_bimwe")
+size = Vector2(10, 10)

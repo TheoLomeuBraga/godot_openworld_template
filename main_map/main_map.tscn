@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dycsasutir17y"]
+[gd_scene load_steps=6 format=3 uid="uid://dycsasutir17y"]
 
 [ext_resource type="PackedScene" uid="uid://cmv44acpjo208" path="res://player/player.tscn" id="1_4e8tq"]
 [ext_resource type="PackedScene" uid="uid://dtl6hln5t4tb" path="res://addons/OpenWorldChunkManager/ChunkManager/ChunkManager.tscn" id="2_guckm"]
 [ext_resource type="PackedScene" uid="uid://0gbnliiicl7d" path="res://addons/OpenWorldChunkManager/ChunkLoader/ChunkLoader.tscn" id="3_gdhtf"]
+[ext_resource type="PlaneMesh" uid="uid://dw8yc4qkpiwev" path="res://main_map/meshes/plane_lod_mesh.tres" id="4_blpcj"]
 
 [sub_resource type="Environment" id="Environment_mmt0k"]
 ambient_light_source = 2
@@ -23,12 +24,15 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1, 
 foucus_node = NodePath("../Player")
 
 [node name="x1_y1" parent="ChunkManager" instance=ExtResource("3_gdhtf")]
+lod_mesh = ExtResource("4_blpcj")
 chunck_scene = "res://main_map/chunks/x1_y1.tscn"
 
 [node name="x2_y1" parent="ChunkManager" instance=ExtResource("3_gdhtf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+lod_mesh = ExtResource("4_blpcj")
 chunck_scene = "res://main_map/chunks/x2_y1.tscn"
 
 [node name="x3_y1" parent="ChunkManager" instance=ExtResource("3_gdhtf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+lod_mesh = ExtResource("4_blpcj")
 chunck_scene = "res://main_map/chunks/x3_y1.tscn"

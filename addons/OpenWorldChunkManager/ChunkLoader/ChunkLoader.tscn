@@ -15,3 +15,5 @@ chunck_scene = null
 [node name="area_display" type="CollisionShape3D" parent="Node"]
 shape = SubResource("BoxShape3D_5fqhi")
 disabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]

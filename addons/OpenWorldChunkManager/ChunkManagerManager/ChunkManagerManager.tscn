@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgidufkraxgpl"]
+
+[ext_resource type="Script" path="res://addons/OpenWorldChunkManager/ChunkManagerManager/chunk_manager_manager.gd" id="1_b0nt5"]
+
+[node name="ChunkManagerManager" type="Node3D"]
+script = ExtResource("1_b0nt5")

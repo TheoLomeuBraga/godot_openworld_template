@@ -4,4 +4,3 @@
 
 [node name="ChunkManager" type="Node3D"]
 script = ExtResource("1_0nxfp")
-foucus_node_is_editor_camera = true

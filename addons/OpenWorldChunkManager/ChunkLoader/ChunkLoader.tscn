@@ -8,7 +8,6 @@ size = Vector3(20, 10, 20)
 [node name="ChunkLoader" type="Node3D"]
 script = ExtResource("1_0tmlp")
 area_scale = Vector3(20, 10, 20)
-chunck_scene = null
 
 [node name="Node" type="Node" parent="."]
 

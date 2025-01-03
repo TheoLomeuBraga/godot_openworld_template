@@ -1,6 +1,6 @@
 @tool
 
-extends Node3D
+extends ChunkManagerPluginBase
 
 class_name ChunkLoader
 

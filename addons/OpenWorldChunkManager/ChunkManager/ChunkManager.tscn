@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtl6hln5t4tb"]
+
+[ext_resource type="Script" path="res://addons/OpenWorldChunkManager/ChunkManager/chunk_manager.gd" id="1_0nxfp"]
+
+[node name="ChunkManager" type="Node3D"]
+script = ExtResource("1_0nxfp")
+foucus_node_is_editor_camera = true

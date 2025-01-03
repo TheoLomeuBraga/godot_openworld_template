@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgulw6vs6wx6r"]
+
+[ext_resource type="Material" uid="uid://bqx171ya8v1ho" path="res://main_map/chunks/materials/gold_material.tres" id="1_uju1c"]
+
+[node name="X3Y1" type="CSGCombiner3D"]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(10, 1, 10)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, -4)
+height = 6.0
+material = ExtResource("1_uju1c")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 4)
+height = 6.0
+material = ExtResource("1_uju1c")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, -4)
+height = 6.0
+material = ExtResource("1_uju1c")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 4)
+height = 6.0
+material = ExtResource("1_uju1c")

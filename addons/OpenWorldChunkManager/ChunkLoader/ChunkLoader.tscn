@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://0gbnliiicl7d"]
+
+[ext_resource type="Script" path="res://addons/OpenWorldChunkManager/ChunkLoader/chunk_loader.gd" id="1_0tmlp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5fqhi"]
+size = Vector3(20, 10, 20)
+
+[node name="ChunkLoader" type="Node3D"]
+script = ExtResource("1_0tmlp")
+area_scale = Vector3(20, 10, 20)
+chunck_scene = null
+
+[node name="Node" type="Node" parent="."]
+
+[node name="area_display" type="CollisionShape3D" parent="Node"]
+shape = SubResource("BoxShape3D_5fqhi")
+disabled = true

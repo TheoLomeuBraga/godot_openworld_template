@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5782fpn2lts6"]
+
+[ext_resource type="Material" uid="uid://bqx171ya8v1ho" path="res://main_map/chunks/materials/gold_material.tres" id="1_ock62"]
+[ext_resource type="Script" path="res://main_map/chunks/scripts/rotator.gd" id="2_v3nln"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_ks0v3"]
+material = ExtResource("1_ock62")
+inner_radius = 2.0
+outer_radius = 3.0
+
+[node name="X2Y1" type="CSGCombiner3D"]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(10, 1, 10)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material = ExtResource("1_ock62")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("TorusMesh_ks0v3")
+script = ExtResource("2_v3nln")
